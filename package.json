@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "CLI for getting weather",
   "main": "index.js",
+  "bin": "./index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/danila718/weather-cli/issues"
   },
-  "homepage": "https://github.com/danila718/weather-cli#readme"
+  "homepage": "https://github.com/danila718/weather-cli#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
