@@ -1,0 +1,23 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danila718/weather-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Daniil Simonyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danila718/weather-cli/issues"
+  },
+  "homepage": "https://github.com/danila718/weather-cli#readme"
+}
