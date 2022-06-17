@@ -1,22 +1,21 @@
 #!/usr/bin/env node
 
-import ArgHelper from "./helpers/args.js";
+import { getArgs } from "./services/arg.service.js";
 import { printHelp } from "./services/log.service.js";
+import { saveKeyValue } from "./services/storage.service.js";
 
 const initCli = () => {
-    const argHelper = new ArgHelper(process.argv);
-
-    const args = argHelper.getArgs();
+    const args = getArgs();
     if (args.h) {
         printHelp();
         // help command
         // return
     }
-    if (args.s) {
-        // save sity
+    if (args.c) {
+        saveKeyValue(args.c);
     }
     if (args.t) {
-        // save token
+       saveKeyValue(args.t);
     }
     // print weather
 };
