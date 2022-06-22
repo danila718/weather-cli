@@ -28,8 +28,8 @@ const printWeather = (data, icon, condition) => {
     console.log(
         dedent
         `
-        ${chalk.bgYellow(' WEATHER ')} Погода в ${geoObject?.country?.name}, ${geoObject?.locality?.name}, ${geoObject?.district?.name}
-        ${icon} ${condition}
+        ${chalk.bgMagenta(' WEATHER ')} Погода в ${geoObject?.country?.name}, ${geoObject?.locality?.name}, ${geoObject?.district?.name}
+        ${icon}  ${condition}
         Температура: ${fact?.temp} (ощущается как ${fact?.feels_like})
         Влажность: ${fact?.humidity} %
         Скорость ветра: ${fact?.wind_speed} м/с
