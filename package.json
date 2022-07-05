@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "CLI for getting weather",
   "main": "weather.js",
-  "type": "module",
+  "type": "commonjs",
   "bin": {
     "weather-cli": "weather.js"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "npm run build && node dist/main.js",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,7 +28,13 @@
   "homepage": "https://github.com/danila718/weather-cli#readme",
   "dependencies": {
     "axios": "^0.27.2",
-    "chalk": "^5.0.1",
-    "dedent": "^0.7.0"
+    "chalk": "^4.1.2",
+    "dedent": "^0.7.0",
+    "inversify": "^6.0.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/dedent": "^0.7.0",
+    "@types/node": "^18.0.1"
   }
 }
